@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://indetail.dev/',
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'key' => 'p9AOVwjYzcVq1crlfwwkhxlX5i1fpzmy',
+    'key' => 'lHbtlT3qgIwPGWymNGm049qRj5LqG3zk',
 
     'cipher' => 'AES-256-CBC',
 
