@@ -13,7 +13,7 @@ const NPM_EVENT = process.env.npm_lifecycle_event;
 const PluginDefineEnv = (env) => new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify(env) });
 
 const commonWebpackPlugins = [
-	new ExtractTextPlugin('../css/style.css')
+	new ExtractTextPlugin('../assets/style.css')
 ];
 
 const webpackConfig = {
@@ -46,13 +46,13 @@ const webpackConfig = {
 			},
 			{
 				test: /\.(eot|svg|ttf|woff|woff2)$/,
-				loader: 'file-loader?name=../fonts/[name].[ext]'
+				loader: 'file-loader?name=../assets/fonts/[name].[ext]'
 			},
 			{
 				test: /\.(jpe?g|png|gif|svg)$/i,
 				loader: 'file-loader',
 				options: {
-					name: '../images/[hash].[ext]'
+					name: '../assets/images/[hash].[ext]'
 				}
 			}
 		]

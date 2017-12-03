@@ -11,16 +11,17 @@ description = "Default Page Layout"
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="generator" content="Indetail">
 		<!-- <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}"> -->
-		<script src="{{ 'assets/bundle-head.js' | theme }}"></script>
-		<!-- <link href="{{ 'assets/bundle-style.js'|theme }}" rel="stylesheet"> -->
+		<!-- <script src="{{ 'assets/bundle-head.js' | theme }}"></script> -->
+		<link href="{{ 'assets/style.css'|theme }}" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 		{% styles %}
 	</head>
 	<body>
 		<!--[if lt IE 8]><p data-control="flash-message" data-interval="15" class="warning browserupgrade">You are using an <strong>outdated</strong> browser.<br>Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 		{% partial 'header' %}
-		<div class="container">
+		<!-- <div class="container"> -->
 			{% page %}
-		</div>
+		<!-- </div> -->
 		{% partial 'footer' %}
 		<script src="{{ 'assets/bundle-head.js' | theme }}"></script>
 		<script src="{{ 'assets/bundle-index.js' | theme }}"></script>
