@@ -1,8 +1,17 @@
+[menu MainMenu]
+start = "id-2"
+activeNode = 0
+listItemClasses = "nav__item"
+primaryClasses = "nav__menu"
+secondaryClasses = "dropdown-menu"
+tertiaryClasses = "link link--light"
+numberOfLevels = 2
 ==
 <header class="header">
 	<div class="header__container col-sm-12">
-		<span class="logo">InDetail</span>
-		<nav>
+		<a href="/" class="logo">InDetail</a>
+		<nav class="nav">
+			{% component 'MainMenu' %}
 		</nav>
 	</div>
 </header>
