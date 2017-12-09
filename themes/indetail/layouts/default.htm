@@ -19,9 +19,11 @@ description = "Default Page Layout"
 	<body>
 		<!--[if lt IE 8]><p data-control="flash-message" data-interval="15" class="warning browserupgrade">You are using an <strong>outdated</strong> browser.<br>Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
 		{% partial 'header' %}
-		<main class="clearfix">
-			{% page %}
-		</main>
+		<div id="outer-container">
+			<main id="page-wrap" class="clearfix">
+				{% page %}
+			</main>
+		</div>
 		{% partial 'footer' %}
 		<script src="{{ 'assets/bundle-head.js' | theme }}"></script>
 		<script src="{{ 'assets/bundle-index.js' | theme }}"></script>
