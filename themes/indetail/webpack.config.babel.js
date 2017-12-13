@@ -33,8 +33,8 @@ const webpackConfig = {
 			{
 				test: /\.js$|\.json$|\.jsx$/,
 				loader: 'babel-loader',
-				include: path.resolve('js/'),
-				exclude: path.resolve(__dirname, 'node_modules')
+				// include: path.resolve('js/'),
+				// exclude: path.resolve(__dirname, 'node_modules')
 			},
 			{
 				test: /\.less$/,

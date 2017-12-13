@@ -37,16 +37,16 @@
     "normalize-css": "^2.3.1",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "prop-types": "^15.6.0",
-    "react": "^15.3.1",
+    "react": "^16.2.0",
     "react-bootstrap": "^0.13.0",
-    "react-burger-menu": "^1.10.4",
-    "react-dom": "^15.3.1",
+    "react-burger-menu": "^2.1.11",
+    "react-dom": "^16.2.0",
     "react-tappable": "^1.0.2",
     "style-it": "^1.2.11",
     "style-loader": "^0.13.1",
     "uglifyjs-webpack-plugin": "^1.0.1",
     "url-loader": "^0.5.7",
-    "webpack": "^3.8.1",
+    "webpack": "^3.10.0",
     "webpack-merge": "^4.1.1"
   }
 }

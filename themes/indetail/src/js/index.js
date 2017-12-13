@@ -1,9 +1,13 @@
 'use strict';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NavUrls from './utils/navUrls';
+import MobileMenu from './components/mobileMenu';
 
 window.addEventListener('DOMContentLoaded', function() {
-	// console.log('Working');
-	console.log(NavUrls());
+	const menuElement = document.querySelector('[data-menu]');
+
+	if (menuElement) {
+		ReactDOM.render(<MobileMenu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } />, menuElement);
+	}
 });

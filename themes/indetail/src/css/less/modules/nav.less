@@ -1,4 +1,3 @@
-nav,
 .nav {
 	float: right;
 
@@ -12,10 +11,6 @@ nav,
 		display: inline-block;
 		margin: 0;
 		padding: 8px 15px 0 0;
-
-		// &:last-child {
-		// 	padding-right: 0px;
-		// }
 
 		&.active {
 			a {
@@ -37,5 +32,9 @@ nav,
 			color: rgba(255, 255, 255, 0.5);
 			text-decoration: none;
 		}
+	}
+
+	@media @sm {
+		display: none;
 	}
 }
