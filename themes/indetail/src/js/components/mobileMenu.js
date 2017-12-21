@@ -14,7 +14,8 @@ class MobileMenu extends Component {
 		super();
 
 		this.state = {
-			shouldMenuRender: window.innerWidth < mobileWidth
+			shouldMenuRender: window.innerWidth < mobileWidth,
+			isOpen: false
 		};
 	}
 
@@ -36,20 +37,24 @@ class MobileMenu extends Component {
 				zIndex: 10,
 				position: 'absolute',
 				width: '36px',
-				height: '25px',
+				height: '23px',
 				right: '20px',
-				top: '21px'
+				top: '22px'
 			},
 			bmBurgerBars: {
 				background: '#fff',
-				height: '5px',
+				height: '4px',
 			},
 			bmCrossButton: {
-				height: '24px',
-				width: '24px'
+				height: '35px',
+				width: '35px',
+				right: '22px',
+				top: '16px'
 			},
 			bmCross: {
-				background: '#fff'
+				background: '#fff',
+				height: '30px',
+				width: '5px'
 			},
 			bmMenuWrap : {
 				zIndex: 15
@@ -64,15 +69,23 @@ class MobileMenu extends Component {
 			},
 			bmItemList: {
 				color: '#b8b7ad',
-				padding: '0.8em'
+				padding: '0.8em',
+				textAlign: 'center'
 			},
 			bmOverlay: {
 				background: 'rgba(0, 0, 0, 0.3)'
 			}
 		};
 
+		var isMenuOpen = (state) => {
+			this.setState({
+				isOpen: state.isOpen
+			});
+		};
+
 		return (
-			<Menu right styles={styles}>
+			<Menu right styles={styles} onStateChange={isMenuOpen}>
+				<a className="menu-item" href="/">Home</a>
 				{navUrls.map(function(navUrl, index){
 					return <a key={index} className="menu-item" href={navUrl.href}>{navUrl.text}</a>;
 				})}
