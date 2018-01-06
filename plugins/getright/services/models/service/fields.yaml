@@ -1,0 +1,21 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+    title:
+        label: getright.services::lang.modeldataform.title
+        type: text
+        required: true
+    text:
+        label: getright.services::lang.modeldataform.description
+        type: textarea
+        required: true
+    link:
+        label: getright.services::lang.modeldataform.internalurl
+        type: dropdown
+        placeholder: getright.services::lang.modeldataform.internalurlplaceholder
+        options: getUrlOptions

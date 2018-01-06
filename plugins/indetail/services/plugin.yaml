@@ -1,6 +1,0 @@
-plugin:
-    name: 'indetail.services::lang.plugin.name'
-    description: 'indetail.services::lang.plugin.description'
-    author: InDetail
-    icon: oc-icon-car
-    homepage: ''

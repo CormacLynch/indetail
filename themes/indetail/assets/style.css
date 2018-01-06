@@ -6876,6 +6876,21 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6974,10 +6989,10 @@ h4,
 p {
   font-family: 'Open Sans', Arial, sans-serif;
   margin: 0 0 10px 0;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 26px;
-  line-height: 2.6rem;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 21px;
+  line-height: 2.1rem;
   color: #333333;
 }
 a,
@@ -7128,6 +7143,12 @@ button:active,
   text-align: center;
   padding-bottom: 15vh;
 }
+@media (min-width: 0px) and (max-width: 767px) {
+  .flash .flash__title {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+}
 footer,
 .footer {
   background-color: rgba(255, 255, 255, 0);
@@ -7208,16 +7229,47 @@ header,
   width: 100%;
   height: 100%;
 }
-.section .section__overlay--dark {
+.section .section__overlay.section__overlay--dark {
   background-color: rgba(0, 0, 0, 0.6);
+}
+.section .section__overlay.section__overlay--darker {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .section .section__title {
   text-align: center;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .section.section--vh {
+    height: 100%;
+    min-height: 100vh;
+  }
 }
 .services {
   background: url(../assets/images/e7a351ba259572af32da4fd9b02f9cef.png) no-repeat;
   background-position: center center;
   background-size: cover;
+}
+.services .services__container {
+  margin: 0 auto;
+}
+.services .services__item {
+  padding: 15px 0;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.services .services__text,
+.services .services__title {
+  color: #fff;
+}
+.services .services__title {
+  font-size: 23px;
+  font-size: 2.3rem;
+  line-height: 26px;
+  line-height: 2.6rem;
+  margin-bottom: 15px;
+}
+.services .services__text {
+  margin-bottom: 20px;
 }
 .social .link {
   display: inline-block;
