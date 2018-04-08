@@ -13,9 +13,8 @@ messageTitle = "Message"
 buttonText = "Submit"
 displayPhone = 1
 ==
-<section class="section contact clearfix">
+<section class="section section--vh contact clearfix">
 	<div class="section__overlay section__overlay--dark"></div>
-	<!-- <div class="row"> -->
 		<div class="col-md-2"></div>
 		<div class="section__container col-md-8">
 			<div class="section__title col-sm-12">
@@ -69,20 +68,18 @@ displayPhone = 1
 						<label for="message">{{simpleContact.properties.messageLabel}}</label>
 						<textarea id="message" name="message" class="form-control" required></textarea>
 					</div>
-					<!-- Injecting reCaptcha if enabled -->
 					{% if(simpleContact.settings.recaptcha_enabled) %}
 					<div class="form-group">
 						<label for="message"></label>
 						<div class="g-recaptcha" data-sitekey="{{simpleContact.settings.recaptcha_site_key}}"></div>
 					</div>
 					{% endif %}
-					<!-- End reCaptcha -->
 					<button id="simpleContactSubmitButton"
 					type="submit" class="btn btn-default">
 					{{simpleContact.properties.buttonText}}
 					</button>
 				</form>
+			</div>
 		</div>
-	<!-- </div> -->
-</div>
+	</div>
 </section>

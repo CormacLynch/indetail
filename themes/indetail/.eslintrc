@@ -1,10 +1,22 @@
 {
-  "parser": "babel-eslint",
-  "rules": {
-    "indent": [2, "tab"],
-    "space-before-function-paren": [1, "never"],
-    "no-underscore-dangle": 0,
-    "jsx-quotes": [2, "prefer-double"],
-    "semi": [2, "always"],
-  }
+	"parser": "babel-eslint",
+	"rules": {
+		"indent": [
+			2,
+			"tab"
+		],
+		"space-before-function-paren": [
+			1,
+			"never"
+		],
+		"no-underscore-dangle": 0,
+		"jsx-quotes": [
+			2,
+			"prefer-double"
+		],
+		"semi": [
+			2,
+			"always"
+		]
+	}
 }
